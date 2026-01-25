@@ -11,5 +11,6 @@ public class ExpenseTrackerController {
     @GetMapping("/getList")
     public void getListOfItems() {
         System.out.println("list of items added are ");
+        System.out.println("this are also the list of items to be added");
     }
 }

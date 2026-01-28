@@ -16,7 +16,9 @@ public class ExpenseTrackerController {
     @Autowired
     private ExpenseService service;
 
-   public void addExpense(ExpenseEntity expense){
+
+    @GetMapping("/saveExpense")
+   public void addExpense(@RequestBody ExpenseEntity expense){
        service.addExpense(expense);
    }
 
